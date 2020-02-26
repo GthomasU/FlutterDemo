@@ -1,3 +1,4 @@
+import 'package:demo/InfinityScroll.dart';
 import 'package:demo/StackWidget.dart';
 import 'package:demo/ContainerWidget.dart';
 import 'package:demo/RowWidget.dart';
@@ -22,7 +23,8 @@ class _MyBottomNavigationBar extends State<MyBottomNavigationBar> {
     RowWidget(),
     ColumnWidget(),
     StackWidget(),
-    ContainerWidget(),
+//    ContainerWidget(),
+    InfinityScroll(),
   ];
 
   void _onItemTapped(int index) {
@@ -59,8 +61,8 @@ class _MyBottomNavigationBar extends State<MyBottomNavigationBar> {
             title: Text('Stack'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.import_contacts),
-            title: Text('Container'),
+            icon: Icon(Icons.list),
+            title: Text('Scroll'),
           ),
         ],
         currentIndex: _selectedIndex,
